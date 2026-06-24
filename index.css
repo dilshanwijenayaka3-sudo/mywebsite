@@ -1,0 +1,293 @@
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    color:white;
+
+    background-image:url('bg.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+background: linear-gradient(135deg, #dbe1e6, #b5dfea);    
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+
+    padding:15px 30px;
+
+    position:fixed;
+    top:0;
+    width:100%;
+
+    z-index:1000;
+
+    box-sizing:border-box;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+
+    padding:12px 18px;
+
+    transition:0.3s;
+
+    border-radius:10px;
+}
+
+.nav-links a:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+.contact-btn{
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+}
+
+/* PROFILE IMAGE */
+
+.circle{
+    width:220px;
+    height:220px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:5px solid white;
+
+    margin-top:140px;
+
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+
+    transition:0.4s;
+}
+
+.circle:hover{
+    transform:scale(1.05);
+}
+
+/* TEXT */
+
+h1{
+    font-size:42px;
+    margin-top:20px;
+
+    text-shadow:0 0 10px rgba(0,0,0,0.7);
+}
+
+p{
+    font-size:18px;
+
+    text-shadow:0 0 8px rgba(0,0,0,0.7);
+}
+
+/* BUTTONS */
+
+a.btn{
+    display:inline-block;
+
+    margin:10px;
+    padding:12px 25px;
+
+    background:linear-gradient(45deg,#ff512f,#dd2476);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:0.4s;
+
+    font-weight:bold;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+}
+
+a.btn:hover{
+    transform:scale(1.1);
+}
+
+/* TITLE */
+
+.title{
+    font-size:36px;
+    font-weight:bold;
+
+    background:linear-gradient(90deg,#ff8a00,#e52e71);
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin:40px 0;
+}
+
+/* VIDEO IMAGES */
+
+.work{
+    width:300px;
+    height:200px;
+
+    object-fit:cover;
+
+    margin:15px;
+
+    border-radius:15px;
+
+    transition:0.4s;
+
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+.work:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+/* FOOTER */
+
+.footer{
+    background:rgba(0,0,0,0.8);
+
+    color:white;
+
+    padding:40px 20px 10px;
+
+    margin-top:50px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-box{
+    width:30%;
+}
+
+.footer-box h3{
+    border-bottom:2px solid #00c3ff;
+
+    padding-bottom:5px;
+
+    margin-bottom:15px;
+}
+
+.footer-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-box ul li{
+    margin:10px 0;
+}
+
+.footer-box a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-box a:hover{
+    color:#00c3ff;
+}
+
+.footer-bottom{
+    border-top:1px solid #00c3ff;
+
+    margin-top:20px;
+    padding-top:10px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        margin-bottom:10px;
+        font-size:20px;
+    }
+
+    .nav-links{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .nav-links a{
+        padding:10px;
+        font-size:14px;
+    }
+
+    .circle{
+        width:160px;
+        height:160px;
+
+        margin-top:220px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .title{
+        font-size:26px;
+    }
+
+    .work{
+        width:90%;
+        height:auto;
+    }
+
+    a.btn{
+        display:block;
+        width:80%;
+        margin:10px auto;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .footer-box{
+        width:90%;
+        margin-bottom:25px;
+    }
+
+}
+
+
